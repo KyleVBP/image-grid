@@ -30,6 +30,10 @@ img {
   float: left;
 }
 
+img:nth-child(0) {
+  display: block;
+}
+
 img[src="images/mars-2.jpg"] {
   display: none;
 }
@@ -58,6 +62,39 @@ img[src="images/mars-5.jpg"] {
   img[src="images/mars-5.jpg"] {
     display: inline-block;
     width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  img[src="images/mars-2.jpg"] {
+    width: 33.3333%;
+  }
+
+  img[src="images/mars-3.jpg"] {
+    width: 33.3333%;
+  }
+
+  img[src="images/mars-4.jpg"] {
+    width: 33.3333%;
+  }
+
+  img[src="images/mars-5.jpg"] {
+    display: none;
+    width: 33.3333%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img[src="images/mars-1.jpg"] {
+    width: 66.6666%;
+  }
+
+  img[src="images/mars-5.jpg"] {
+    display: inline-block;
   }
 
 }
